@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".FouActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/pb1"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:text="显示" />
+
+        <Button
+            android:id="@+id/pb2"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:text="隐藏" />
+        
+        <Button
+            android:id="@+id/pb3"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="下页，切换动画" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/panda"
+        android:layout_width="fill_parent"
+        android:layout_height="200px" />
+
+    <SeekBar
+        android:id="@+id/ic_launcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="255" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前值:255" />
+
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 直接用数组资源 -->
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="75sp"
+        android:entries="@array/man"
+        android:textSize="20sp" />
+    <!--
+    用array数组资源  
+    <ListView android:id="@+id/peo"
+        android:layout_width="fill_parent"
+        android:layout_height="75sp"	/>
+    -->
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

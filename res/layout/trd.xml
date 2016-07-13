@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+	<Chronometer 
+    	android:id="@+id/time"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="20sp"	
+    	android:textColor="#F00"	/>
+	
+	<TextView 
+	    android:id="@+id/serializable"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"	/>
+    
+	<TextView 
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="这是AutoCompleteTextView"	/>
+	<AutoCompleteTextView 
+	    android:id="@+id/auto"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:completionHint="你选择的是:"
+        android:dropDownHorizontalOffset="30sp"
+        android:completionThreshold="1"	    />
+	
+	<TextView 
+	    android:id="@+id/sp2"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="这是Spinner"	/>
+	<Spinner 
+	    android:id="@+id/sp"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"	/>
+		
+	<DatePicker 
+	    android:id="@+id/da"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"	    />
+	
+	<Button	    android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"   
+        android:onClick="startTitleProgressBar"  
+        android:text="开启TitleProgressBar"  
+        android:layout_gravity="bottom"		/> 
+    <ProgressBar	android:id="@+id/bar1"
+	    style="@android:style/Widget.ProgressBar.Horizontal"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:max="100"	/>"
+
+</LinearLayout>

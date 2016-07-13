@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#777"	>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="60sp"
+   	    android:layout_height="40sp"
+   	    android:background="@drawable/back"	/>
+    
+    <TextView 
+        android:id="@+id/titletext"
+        android:layout_width="0sp"
+        android:layout_weight="1"
+   	    android:layout_height="wrap_content"
+   	    android:layout_margin="5sp"
+   	    android:gravity="center"
+   	    android:text="this is a title"
+   	    android:textColor="#fff"
+   	    android:textSize="26sp"	/>
+    
+    <Button 
+        android:id="@+id/edit"
+        android:layout_width="60sp"
+   	    android:layout_height="40sp"
+   	    android:background="@drawable/edit"	/>
+    
+</LinearLayout>
